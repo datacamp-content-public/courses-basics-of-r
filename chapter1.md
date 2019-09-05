@@ -39,6 +39,8 @@ b <- a^2
 
 `@sct`
 ```{r}
-check_error()
+"a <- c(1,3,4)"
+ex() %>% check_error()
+ex() %>% check_object("a") %>% check_equal()
 success_msg("Well done!", praise = FALSE)
 ```
