@@ -13,7 +13,7 @@ xp: 100
 skills: 1
 ```
 
-This is an example exercise.
+Define vector (1,3,4) and store it to variable a. Calculate a^2 and store it to variable b.
 
 `@instructions`
 
@@ -33,10 +33,12 @@ This is an example exercise.
 
 `@solution`
 ```{r}
-
+a <- c(1,3,4)
+b <- a^2
 ```
 
 `@sct`
 ```{r}
-
+check_error()
+success_msg("Well done!", praise = FALSE)
 ```
